@@ -128,7 +128,7 @@ export default function AppShell() {
               {route === "board"     && <BoardView    tasks={filtered} onTaskClick={openEdit} />}
               {route === "list"      && <ListView     tasks={filtered} onStatusChange={handleStatusChange} onTaskClick={openEdit} />}
               {route === "analytics" && <AnalyticsView tasks={tasks} />}
-              {route === "settings"  && <SettingsView />}
+            { /* route === "settings"  && <SettingsView /> */}
             </>
           )}
         </div>

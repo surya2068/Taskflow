@@ -7,7 +7,7 @@ export default function LoginPage() {
   const { login }         = useAuth();
   const { theme, toggleTheme } = useTheme();
 
-  const [email,    setEmail]    = useState("admin@taskflow.io");
+  const [email,    setEmail]    = useState("admin@gmail.com");
   const [password, setPassword] = useState("password");
   const [error,    setError]    = useState("");
   const [loading,  setLoading]  = useState(false);
@@ -62,7 +62,7 @@ export default function LoginPage() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@company.io"
+              placeholder="you@gmial.com"
               required
               autoFocus
             />
@@ -92,7 +92,7 @@ export default function LoginPage() {
         </form>
 
         <p className="login-hint">
-          Demo: any email + <span>6+ char password</span>
+          Demo:  Email + <span>PASSWORD</span>
         </p>
       </div>
     </div>
